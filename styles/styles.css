@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@layer components {
+  .header-shadow {
+    box-shadow: 0px 5px 5px 0px rgb(210, 210, 210);
+  }
+  .Button-Shadow{
+    box-shadow: 0px 2px 5px 0px #767777;
+    
+  }
+  .background-app {
+    background: linear-gradient(138.13deg, #4FCFFD 1.82%, #7B61FF 134.35%);;
+  }
+  .card-text-background {
+    background: linear-gradient(to bottom, rgba(79,207,253, 0.2) 0%, 	
+    rgba(79,207,253) 100%);
+  }
+
+  .border-theme{
+    border:1px solid #4fcffd
+  }
+  .background-app-theme {
+    background: linear-gradient(
+      90deg,
+      rgba(123, 97, 255, 1) 0%,
+      rgba(79, 207, 253, 1) 100%
+    );
+    /* background: linear-gradient(to right, #4fcffd 0%, #7b61ff 100%); */
+  }
+  
+
+  .text-theme {
+    background: linear-gradient(to right, #4fcffd 0%, #7b61ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .welcome-card-size-lg {
+    @apply w-[420px] h-[248px];
+  }
+  .Menu-clip-path {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+  .welcome-card-clip-path {
+  }
+}
+
+@layer utilities {
+  html,
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.background-theme {
+  opacity: 0;
+}
+.aboutBox > .background-theme:hover {
+  opacity: 1;
+}
+
+.aboutBox > .background-theme:hover {
+  opacity: 1;
+}
+.aboutBox .question,
+.question2 {
+  transform: translateY(200px);
+}
+.aboutBox:hover .question,
+.question2 {
+  transform: translateY(0px);
+}
+.swiper {
+  position: static !important ;
+}
+.swiper-button-prev {
+  content: url("../public/Assets/prevButton.png") !important;
+  width: 44px !important;
+  height: 44px !important;
+  position: absolute !important;
+  left: -15px !important;
+  /* filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5)); */
+}
+.swiper-button-next {
+  content: url("../public/Assets/nextButton.png") !important;
+  width: 44px !important;
+  height: 44px !important;
+  position: absolute !important;
+  right: -20px !important;
+  /* filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5)); */
+}
+.mySwiper .swiper-pagination-bullet-active{
+  background: linear-gradient(138.13deg, #4FCFFD 1.82%, #7B61FF 134.35%) !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+.mySwiper .swiper-pagination-bullet{
+  /* background: white !important; */
+  /* background: black !important; */
+  background-color: transparent !important;
+  border: 2px solid #7b61ff !important ;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.Our-Doctors-List li:hover{
+  border-bottom: 1px solid #7b61ff;
+  font-weight: 700;
+}
+.Box-Shadow{
+  box-shadow: 0 5px 10px 0px rgb(207, 204, 204);
+}
+.BG-Transparent-Black{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mySwiper .swiper-pagination {
+  top: 430px !important;
+}
+.Contact-Us-BG{
+  background-image: url('../public/Assets/ContactUs-Bg.png');
+}
